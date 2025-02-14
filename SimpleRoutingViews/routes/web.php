@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GreetController;
 
 Route::get('/', function () {
-    return view('itemForm');
+    return view('welcome');
 });
 
 Route::get('/hello', function () {
