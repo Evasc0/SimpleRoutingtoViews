@@ -4,38 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello Laravel</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            background-color:rgb(0, 0, 0);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0; 
-        }
+    @vite('resources/css/app.css')
 
-        .container {
-            text-align: center;
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        p {
-            color: #666;
-        }
-    </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Hello, Laravel!</h1>
-        <p>Welcome, @if(isset($user)) {{ $user }} @else POGI @endif!</p>
+<body class="flex justify-center items-center min-h-screen bg-black">
+    <div class="container bg-white p-6 rounded-lg shadow-lg text-center">
+        <h1 class="text-3xl font-bold text-gray-800">Hello, Laravel!</h1>
+        <p class="text-gray-600">
+            Welcome, @if(isset($user)) {{ $user }} @else POGI @endif!
+        </p>
     </div>
 </body>
 </html>
